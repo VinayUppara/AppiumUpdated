@@ -53,12 +53,12 @@ public static boolean checkIfServerIsRunnning(int port) {
 		}
 		return isServerRunning;
 	}
-public static void startEmulator() throws IOException, InterruptedException
-{
-
-	Runtime.getRuntime().exec(System.getProperty("user.dir")+"\\src\\main\\java\\resources\\startEmulator.bat");
-	Thread.sleep(6000);
-}
+	/*
+	 * public static void startEmulator() throws IOException, InterruptedException {
+	 * 
+	 * Runtime.getRuntime().exec(System.getProperty("user.dir")+
+	 * "\\src\\main\\java\\resources\\startEmulator.bat"); Thread.sleep(6000); }
+	 */
 
 	public static  AndroidDriver<AndroidElement> capabilities(String appName) throws IOException, InterruptedException
 	{
